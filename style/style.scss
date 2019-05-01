@@ -8,10 +8,19 @@ body {
    width: 75%;
    position: relative;
    margin: auto;
+   height: 100%;
+}
+
+a {
+   text-decoration: none;
 }
 
 @import 'variable';
 @import 'nav';
+
+.bawah-nav {
+   height: 50px;
+}
 
 .head {
    background-image: url('../image/blurred-background-bright-close-up-2128220.jpg');
@@ -51,4 +60,37 @@ body {
    }
 }
 
+.active {
+   border-bottom: 4px solid tomato;
+   transition: .3s ease;
+}
+
 @import './login';
+@import './main';
+@import './gambar';
+@import 'table';
+@import 'about';
+@import 'contact';
+
+.footer {
+   margin-top: 10px;
+   background-color: $cl-primary;
+   padding: 5px;
+   color: rgb(238, 234, 234);
+   text-align: center;
+}
+
+/* Micro Clearfix */
+.cf:before,
+.cf:after {
+   content: " ";
+   display: table;
+}
+
+.cf:after {
+   clear: both;
+}
+
+.cf {
+   *zoom: 1;
+}

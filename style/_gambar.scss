@@ -1,0 +1,50 @@
+@import 'variable';
+@import './main';
+
+$img-1: '../image/2865606287.jpg';
+$img-2: '../image/Man-City-v-Man-Utd.png';
+$img-3: '../image/getafereal250417.jpg';
+$img-4: '../image/eibar-vs-atletico-madrid.jpg';
+
+@mixin gambar($url) {
+   background-image: url($url);
+   background-size: cover;
+}
+
+/* Gambar */
+.gambar-1 {
+   @include gambar-berita();
+   @include gambar($img-1);
+}
+
+.gambar-2 {
+   @include gambar-berita();
+   @include gambar($img-2);
+}
+
+
+/*Gambar-sidebar */
+.gambar-1-side {
+   @include gambar-side();
+   @include gambar($img-1)
+}
+
+.gambar-2-side {
+   @include gambar-side();
+   @include gambar($img-2);
+}
+
+.gambar-3-side {
+   @include gambar-side();
+   @include gambar($img-3);
+}
+
+.gambar-3-side {
+   @include gambar-side();
+   @include gambar($img-3);
+}
+
+.gambar-4-side {
+   @include gambar-side();
+   @include gambar($img-4);
+}

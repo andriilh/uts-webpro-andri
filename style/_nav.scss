@@ -13,7 +13,7 @@ nav {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-weight: bold;
       letter-spacing: 4px;
-      color: $cl-white;
+      color: $cl-white ligh;
       position: absolute;
       top: 10px;
 
@@ -44,7 +44,7 @@ nav {
             }
          }
 
-         &:nth-child(4) {
+         &:nth-child(5) {
             background-color: tomato;
 
             a {

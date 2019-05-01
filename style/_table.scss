@@ -1,0 +1,178 @@
+@import 'variable';
+
+/* Tables */
+
+$lebar: 7.22%;
+
+@mixin propert($warna) {
+   width: $lebar;
+   height: 25px;
+   text-align: center;
+   background-color: $warna;
+}
+
+@mixin propert-td($warna) {
+   @include propert($warna);
+   border-bottom: 1px solid black;
+}
+
+.klasemen {
+   width: 90%;
+   border-collapse: collapse;
+   background-color: #45c48b59;
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+
+   tr:nth-child(1) {
+      @include propert($cl-3);
+      height: 35px;
+      border-bottom: $bbottom;
+   }
+
+   tr:hover {
+
+      td:nth-child(1),
+      td:nth-child(2),
+      td:nth-child(3),
+      td:nth-child(4),
+      td:nth-child(5),
+      td:nth-child(6),
+      td:nth-child(7),
+      td:nth-child(8),
+      td:nth-child(9),
+      td:nth-child(10) {
+         background-color: #1bd8af;
+         cursor: pointer;
+         color: white;
+         font-weight: bolder;
+         transition: .3s ease;
+      }
+   }
+
+   td:nth-child(1) {
+      @include propert-td($cl-1);
+   }
+
+   td:nth-child(2) {
+      border-bottom: 1px solid black;
+   }
+
+   td:nth-child(3) {
+      @include propert-td(salmon);
+      font-weight: bolder;
+   }
+
+   td:nth-child(4) {
+      @include propert-td($cl-1);
+   }
+
+   td:nth-child(5) {
+      @include propert-td($cl-2);
+   }
+
+   td:nth-child(6) {
+      @include propert-td($cl-1);
+   }
+
+   td:nth-child(7) {
+      @include propert-td($cl-2);
+   }
+
+   td:nth-child(8) {
+      @include propert-td($cl-1);
+   }
+
+   td:nth-child(9) {
+      @include propert-td($cl-2);
+   }
+
+   td:nth-child(10) {
+      @include propert-td($cl-1);
+   }
+}
+
+.kotak-ket-tabel {
+
+   position: absolute;
+   float: left;
+   box-sizing: border-box;
+
+   .ket-tabel {
+      font-weight: lighter;
+      font-size: smaller;
+      text-align: left;
+
+      span {
+         display: inline-block;
+         height: 25px;
+         width: 30px;
+         font-size: larger;
+         font-weight: 800;
+         text-align: right;
+         margin-right: 5px;
+      }
+   }
+}
+
+.kotak-ket-tabel2 {
+   float: right;
+   position: absolute;
+   right: 379px;
+
+   li {
+      font-size: 25px;
+      display: block;
+      text-align: center;
+      width: 300px;
+
+      a {
+         display: block;
+         padding: 10px 0;
+         font-size: small;
+         margin-top: 2px;
+      }
+   }
+}
+
+// klasemen Properties
+.tabel-border-left-ucl {
+   border-left: 7px solid $cl-primary;
+}
+
+.tabel-border-left-uel {
+   border-left: 7px solid $cl-warning;
+}
+
+
+.tabel-border-left-kuel {
+   border-left: 7px solid $cl-green;
+}
+
+.tabel-border-left-deg {
+   border-left: 7px solid $cl-danger;
+}
+
+.text-succes {
+   color: $cl-success;
+}
+
+.bg-warning {
+   background-color: $cl-warning;
+}
+
+.bg-succes {
+   background-color: $cl-success;
+}
+
+.bg-green {
+   background-color: $cl-green;
+}
+
+.bg-danger {
+   background-color: $cl-danger;
+}
+
+
+#keterangan-tabel {
+   height: 320px;
+   width: 100%;
+}
