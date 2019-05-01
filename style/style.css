@@ -58,8 +58,16 @@ nav ul li:hover ul {
   visibility: visible;
 }
 
-nav ul li:nth-child(4):hover {
+nav ul li:nth-child(4) {
   background-color: tomato;
+}
+
+nav ul li:nth-child(4) a {
+  font-weight: bold;
+}
+
+nav ul li:nth-child(4):hover {
+  background-color: #2fb7c8;
 }
 
 nav ul li a {
@@ -124,10 +132,161 @@ nav ul li ul li a {
   z-index: 1;
 }
 
+.head p {
+  color: white;
+  position: absolute;
+  margin-top: 260px;
+  z-index: 2;
+  padding-left: 2px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
 #body {
-  height: 100vh;
-  width: 100%;
   background-color: #21D4FD;
   background-image: linear-gradient(135deg, #21D4FD 0%, #B721FF 100%);
+  width: 100%;
+  height: 750px;
+  position: relative;
+  background-attachment: fixed;
+  top: 0;
+}
+
+#body form {
+  width: 350px;
+  height: 450px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#body form a {
+  text-decoration: none;
+}
+
+#body form .logo {
+  position: absolute;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 50px;
+  top: 0;
+  background-color: #007bff;
+  text-align: center;
+}
+
+#body form .logo p {
+  color: #fff;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 50%;
+}
+
+#body form .logo p span {
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: white;
+  color: #007bff;
+  padding: 6px 10px 9px 10px;
+  text-align: center;
+  line-height: 50%;
+  border-radius: 20px;
+}
+
+#body form .form {
+  position: absolute;
+  width: 90%;
+  height: 250px;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+#body form .form p {
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+#body form .form input {
+  width: 90%;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #007bff;
+  padding-left: 6px;
+  background-color: transparent;
+  text-align: center;
+}
+
+#body form .form input::-webkit-input-placeholder {
+  -webkit-box-shadow: 1px 1px 3px #84fab0;
+          box-shadow: 1px 1px 3px #84fab0;
+}
+
+#body form .form input:-ms-input-placeholder {
+  box-shadow: 1px 1px 3px #84fab0;
+}
+
+#body form .form input::-ms-input-placeholder {
+  box-shadow: 1px 1px 3px #84fab0;
+}
+
+#body form .form input::placeholder {
+  -webkit-box-shadow: 1px 1px 3px #84fab0;
+          box-shadow: 1px 1px 3px #84fab0;
+}
+
+#body form .form .btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: inline-block;
+  text-decoration: none;
+  width: 90%;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin-top: 50px;
+  color: #fff;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  background-image: -webkit-gradient(linear, left top, right top, from(#84fab0), color-stop(51%, #8fd3f4), to(#84fab0));
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-size: 200% auto;
+  font-weight: bolder;
+}
+
+#body form .form .btn:hover {
+  background-position: right center;
+}
+
+#body form .form .tooo {
+  margin-top: 20px;
+  color: #353333;
+  font-weight: normal;
+}
+
+#body form .form .tooo a {
+  color: black;
+}
+
+#body form .form .tooo a:nth-child(1):hover {
+  color: lightcoral;
+}
+
+#body form .form .tooo a:nth-child(2):hover {
+  color: #ffc107;
 }
 /*# sourceMappingURL=style.css.map */
